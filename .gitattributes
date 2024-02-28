@@ -1,0 +1,2 @@
+recordings filter=lfs diff=lfs merge=lfs -text
+recordings/* filter=lfs diff=lfs merge=lfs -text
