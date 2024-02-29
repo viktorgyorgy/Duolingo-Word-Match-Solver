@@ -195,7 +195,7 @@ def play_a_round():
 def play_n_times(n: int):
     for i in range(n):
         play_a_round()
-        if i % config.data_save_frequency == 0:
+        if i % config.data_save_frequency == (config.data_save_frequency - 1):
             save_data()
 
 
