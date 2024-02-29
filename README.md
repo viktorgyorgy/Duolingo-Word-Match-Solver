@@ -12,7 +12,7 @@ A script which solves the Match Madness event in Duolingo. Written with **python
 
 # Setup
 ## Appium
-Guide: [http://appium.io/docs/en/latest/quickstart/requirements](http://appium.io/docs/en/latest/quickstart/requirements).
+Installation guide: [http://appium.io/docs/en/latest/quickstart/requirements](http://appium.io/docs/en/latest/quickstart/requirements).
 
 ## Python
 It can be downloaded at [https://www.python.org/](https://www.python.org/).  
