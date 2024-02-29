@@ -4,7 +4,6 @@ from appium.webdriver.common.appiumby import AppiumBy
 from appium.webdriver.common.touch_action import TouchAction
 import time
 import pickle
-import subprocess
 import os
 import config
 
@@ -54,8 +53,8 @@ def boot_up_match_madness():
 
 #starts the match madness
 def start_game():
+    time.sleep(2)
     print("Clicking Start button")
-    time.sleep(1)
     driver.find_element("id", "com.duolingo:id/matchMadnessStartChallenge").click()
     print("Clicked Start button")
 
@@ -85,6 +84,10 @@ def match_words():
     while True:
         for i in range(5):
             eng_word = elements[i].text
+
+            not_clickable = not (element_wrappers[i].get_attribute('clickable') == 'true')
+            if not_clickable:
+                continue
 
             was_selected = False
 
@@ -187,12 +190,13 @@ def play_a_round():
                 continue
             except:
                 exit_game()
-                save_data()
                 return
             
 def play_n_times(n: int):
-    for _ in range(n):
+    for i in range(n):
         play_a_round()
+        if i % config.data_save_frequency == 0:
+            save_data()
 
 
 if reset_duolingo:
