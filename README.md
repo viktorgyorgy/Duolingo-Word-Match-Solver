@@ -26,6 +26,6 @@ After installation run: ```pip install Appium-Python-Client```.
 # How to run
 1. Connect phone to pc via USB.
 2. Check that the phone is connected. Run ```adb devices``` in a terminal (adb location by default is C:/Users/<username>/AppData/Local/Android/SDK/platform-tools/adb). There should be a device ID present, if the phone can be seen.
-3. Run ```adb shell pm grant com.appindustry.everywherelauncher android.permission.WRITE_SECURE_SETTINGS``` (only needed at first run, later can be skipped).
+3. Run ```adb shell pm grant com.appindustry.everywherelauncher android.permission.WRITE_SECURE_SETTINGS``` (only needed at first run, at second or later runs not needed).
 4. Run ```appium``` in a terminal.
 5. In the project folder,  run ```python script.py```.
