@@ -21,7 +21,7 @@ After installation run: ```pip install Appium-Python-Client```.
 ## Phone
 1. Enable developer mode (https://developer.android.com/studio/debug/dev-options#enable).
 2. At developer options, enable these settings: USB Debugging, USB debugging (Security setting), Don't lock screen.
-3. Connect phone to pc
+3. Connect the phone to the.
 
 # How to run
 1. Connect phone to pc via USB.
