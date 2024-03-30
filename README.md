@@ -6,13 +6,13 @@ A script which solves the Match Madness event in Duolingo. Written with **python
 - The script runs on a computer, and solves the minigame on a phone connected to the pc.
 - It boots up the Duolingo on the phone, and plays Match Madness a number of times (the value of how many round are played can be changed in the config file).
 - The code learns the word pairs during the gameplay. It can learn them for any language combination.
-- The learned pairs are saved and loaded for later uses.
+- The learned pairs are saved and loaded in later runs of the script.
 - The hardest level of match madness is solved with around 40 seconds remaining (for reference I have around 25% completion rate, and when I finish I have 5 second left).
 - A full demonstration can be found in the recordings folder, named as "long_showcase.mp4".
 
 # Setup
 ## Appium
-Installation guide: [http://appium.io/docs/en/latest/quickstart/requirements](http://appium.io/docs/en/latest/quickstart/requirements).
+Installation guide: [http://appium.io/docs/en/latest/quickstart/requirements](http://appium.io/docs/en/latest/quickstart/requirements) (do everything in the 'Install Appium' and 'Install the UiAutomator2 Driver' tab).
 
 ## Python
 It can be downloaded at [https://www.python.org/](https://www.python.org/).  
@@ -20,7 +20,7 @@ After installation run: ```pip install Appium-Python-Client```.
 
 ## Phone
 1. Enable developer mode (https://developer.android.com/studio/debug/dev-options#enable).
-2. At developer options, enable these settings: USB Debugging, USB debugging (Security setting), Don't lock screen.
+2. At developer options, enable these settings: USB Debugging, USB debugging (Security setting), Don't lock screen, Install via USB.
 3. Connect the phone to the.
 
 # How to run
